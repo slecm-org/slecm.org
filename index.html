@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://aidanbyrnes.net/slecm/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLECM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Roboto Mono', monospace;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        #background {
+            filter: blur(100px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .title-box {
+            border: 1px solid #ffffff;
+            padding: 15px 25px;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+        }
+
+        .title-box h1 {
+            font-size: 24px;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        .bio-box {
+            border: 1px solid #ffffff;
+            padding: 25px;
+            margin-top: 25px;
+            line-height: 1.6;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+        }
+
+        .connection {
+            width: 1px;
+            height: 25px;
+            background-color: #ffffff;
+            margin: -10px auto -10px;
+        }
+
+        .links {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .link-node {
+            position: relative;
+        }
+
+        .announcement{
+            filter: invert(1);
+            box-sizing: content-box;
+        }
+
+        .link-box {
+            background-color: #000000;
+            border: 1px solid #ffffff;
+            padding: 18px 25px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .announcement .link-box {
+            border: 1px solid #000000;
+        }
+
+        .email {
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .email .link-label {
+            opacity: 1;
+        }
+
+        .link-box:hover {
+            background-color: rgba(26, 26, 26, 0.9);
+        }
+
+        .link-box:active {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .link-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            opacity: 0.7;
+        }
+
+        .link-text {
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        .announcement .link-text{
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .title-box h1 {
+                font-size: 25px;
+            }
+            
+            .bio-box {
+                font-size: 14px;
+            }
+            
+            .link-text {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://aidanbyrnes.net/slecm/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://aidanbyrnes.net/slecm/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://aidanbyrnes.net/slecm/favicon-16x16.png">
+    <link rel="manifest" href="https://aidanbyrnes.net/slecm/site.webmanifest">
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="title-box">
+                <h1>SLECM</h1>
+                <div class="link-label">St. Louis Electronic, Computer Music</div>
+            </div>
+
+            <div class="bio-box">
+                <p>Community for experimental electronic music in St. Louis, MO.</p>
+            </div>
+
+            <div class="links">
+                <div class="link-node announcement">
+                    <a href="https://aidanbyrnes.net/slecm/mix/submission/" class="link-box" rel="noopener">
+                        <div class="link-label">SLECM MIX</div>
+                        <div class="link-text">mix 1 submission</div>
+                    </a>
+                </div>
+
+                <div class="connection"></div>
+
+                <div class="link-node">
+                    <a href="https://www.instagram.com/slecm_org" class="link-box" rel="noopener">
+                        <div class="link-label">Social</div>
+                        <div class="link-text">SLECM Instagram</div>
+                    </a>
+                </div>
+
+                <div class="link-node">
+                    <a href="https://discord.gg/t6u6Tda4S4" class="link-box" rel="noopener">
+                        <div class="link-label">Community</div>
+                        <div class="link-text">SLECM Discord</div>
+                    </a>
+                </div>
+
+                <div class="link-node">
+                    <a href="https://github.com/slecm-org" class="link-box" rel="noopener">
+                        <div class="link-label">Resources</div>
+                        <div class="link-text">SLECM GitHub</div>
+                    </a>
+                </div>
+
+                <a href="mailto:SLECM&lt;slecm@aidanbyrnes.net&gt;" class="email" rel="noopener">
+                        <div class="link-label">slecm@aidanbyrnes.net</div>
+                </a>
+            </div>
+        </div>
+    </div>
+<script defer="" src="./SLECM_files/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;52386a654b234ba8874e7e6b249bf2cd&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+</body></html>
